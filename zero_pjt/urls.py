@@ -21,4 +21,8 @@ from zero_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.root),
+    path('sayhi/', views.sayhi),
+    path('menus/', views.menus),
+    path('lotto/', views.lotto),
+    path('cube/<int:number><int:cube>/', views.cube),
 ]
